@@ -47,5 +47,6 @@ int main(){
     for(int i=0;i<num;i++){
       cout<<"\n"<<s[i].name<<"\t\t"<<s[i].a<<"\t\t"<<s[i].b<<"\t\t"<<s[i].c<<"\t\t"<<s[i].average;
     }
+    
     return 0;
 }
