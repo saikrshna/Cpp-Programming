@@ -41,13 +41,15 @@ int main(){
     Student s[10];
     cout<<"\n\nEnter the number of students: ";
     cin>>num;
+    
     cout<<"\nEnter "<<num<<" number of students: ";
     for(int i=0;i<num;i++){
         s[i].getdata();
     }
 
-    cout<<"\n\n\t\t-----------------------Result-----------------------"<<endl;
+    cout<<"\n\n\t\t---------------------Result---------------------"<<endl;
     cout<<"Name\t\tMaths\t\tSocial\t\tScience\t\tAttendence\tResult"<<endl;
+    
     for(int i=0;i<num;i++){
         cout<<"\n"<<s[i].name<<"\t\t"<<s[i].maths<<"\t\t"<<s[i].social<<"\t\t"<<s[i].science<<"\t\t"<<s[i].attendence<<"\t\t";
         s[i].printresult();
