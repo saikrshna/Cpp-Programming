@@ -6,7 +6,6 @@ class Student{
     int reg_no,age;
     string name;
     virtual void sort(int n){
-        
     };
 };
 
@@ -24,6 +23,7 @@ class Btech: public Student{
         cin>>mark;
     }
     void sort(int n);
+    
 };
 
 class Mtech: public Student{
