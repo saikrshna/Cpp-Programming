@@ -47,9 +47,25 @@ class BankAccount{
   int BankAccount :: balance=0;
  int main(){
      BankAccount b;
-     b.getdata();
-     b.depositor();
-     b.withdrawal();
-     b.display();
+     int choice=0;
+     do{
+        cout<<"Enter 1 for adding data\nEnter 2 for deposit\nEnter 3 for withdrawal\nEnter 4 for displaying\nEnter 5 for EXIT:";
+        cin>>choice;
+        switch(choice){
+            case 1:
+                   b.getdata();
+                   break;
+            case 2:
+                   b.depositor();
+                   break;
+            case 3:
+                   b.withdrawal();
+                   break;
+            case 4:
+                   b.display();
+                   break;
+        }
+     }while(choice!=5);
+     
      return 0;
  }
